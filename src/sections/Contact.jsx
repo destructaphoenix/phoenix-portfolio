@@ -43,8 +43,8 @@ const Contact = () => {
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Have a project? Let's talk."
+          sub="💬 Freelance data, AI, and software work — or just say hi"
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
@@ -62,7 +62,7 @@ const Contact = () => {
                     name="name"
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What’s your good name?"
+                    placeholder="What should I call you?"
                     required
                   />
                 </div>
@@ -75,7 +75,7 @@ const Contact = () => {
                     name="email"
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What’s your email address?"
+                    placeholder="Where can I reply?"
                     required
                   />
                 </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="What are you working on?"
                     rows="5"
                     required
                   />

@@ -12,7 +12,7 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
+    name: "Writing",
     link: "#testimonials",
   },
 ];
@@ -28,11 +28,12 @@ const words = [
   { text: "Code", imgPath: "/images/code.svg" },
 ];
 
+// TODO: replace placeholders with real metrics before going live
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 2, suffix: "+", label: "Years of Experience" },
+  { value: 0, suffix: "", label: "Placeholder metric 2" },
+  { value: 0, suffix: "", label: "Placeholder metric 3" },
+  { value: 0, suffix: "", label: "Placeholder metric 4" },
 ];
 
 const logoIconsList = [
@@ -74,112 +75,101 @@ const logoIconsList = [
 const abilities = [
   {
     imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    title: "Built to Hold Up",
+    desc: "Pipelines and systems that survive contact with real data, not just the happy path.",
   },
   {
     imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    title: "Plain-English Updates",
+    desc: "No jargon walls, no status theatre — you hear what's working, what's not, and what's next.",
   },
   {
     imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    title: "Ships When It Should",
+    desc: "Scoped honestly up front and delivered on time. Slipping deadlines is a planning failure.",
   },
 ];
 
 const techStackImgs = [
   {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
+    name: "Python",
     imgPath: "/images/logos/python.svg",
   },
   {
-    name: "Backend Developer",
+    name: "SQL & dbt",
     imgPath: "/images/logos/node.png",
   },
   {
-    name: "Interactive Developer",
+    name: "React",
+    imgPath: "/images/logos/react.png",
+  },
+  {
+    name: "Cloud (AWS / GCP)",
     imgPath: "/images/logos/three.png",
   },
   {
-    name: "Project Manager",
+    name: "Git & Workflow",
     imgPath: "/images/logos/git.svg",
   },
 ];
 
 const techStackIcons = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Python Developer",
+    name: "Python",
     modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Interactive Developer",
-    modelPath: "/models/three.js-transformed.glb",
-    scale: 0.05,
+    name: "Claude",
+    modelPath: "/models/claude-transformed.glb",
+    scale: 2,
     rotation: [0, 0, 0],
   },
   {
-    name: "Project Manager",
+    name: "Google Cloud",
+    modelPath: "/models/google-cloud-transformed.glb",
+    scale: 0.03,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Git & Workflow",
     modelPath: "/models/git-svg-transformed.glb",
     scale: 0.05,
     rotation: [0, -Math.PI / 4, 0],
   },
 ];
 
+// TODO: replace with real roles, dates, and responsibilities before going live
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Two years in. Builds things that work, explains them clearly, gets promoted.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "Consultant — Deloitte",
+    date: "2024 — Present",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built and maintained ETL pipelines across cloud and on-prem environments, progressing from execution to leading workstreams",
+      "Worked across SQL, Python, and dbt to support analytics, reporting, and data modeling needs",
+      "Delivered data engineering solutions on client engagements across multiple domains",
     ],
   },
   {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Building in public. Slow at first, then all at once.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Founder — the Re:Build",
+    date: "2026 — Present",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Building an audience through the Re:Build, a Substack newsletter on indie products and engineering",
+      "Shipping small data and AI products every few weeks",
+      "Taking on freelance engineering work across data pipelines, AI tooling, and analytics",
     ],
   },
 ];
@@ -199,67 +189,75 @@ const expLogos = [
   },
 ];
 
+// Repurposed as excerpts from "the rebuild" on Substack.
+// Card structure unchanged: name -> post title, mentions -> date/status.
 const testimonials = [
   {
-    name: "Esther Howard",
-    mentions: "@estherhoward",
+    name: "Why I started the rebuild",
+    mentions: "the rebuild · intro",
     review:
-      "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+      "I have a stable job building data pipelines. That's exactly why I'm starting this — to figure out what gets built when nobody's paying you to ship it.",
     imgPath: "/images/client1.png",
   },
   {
-    name: "Wade Warren",
-    mentions: "@wadewarren",
+    name: "Audience before product",
+    mentions: "the rebuild · draft",
     review:
-      "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+      "Everyone says build in public. Nobody mentions that the first six months are mostly you writing into a void. That's the part I want to document honestly.",
     imgPath: "/images/client3.png",
   },
   {
-    name: "Guy Hawkins",
-    mentions: "@guyhawkins",
+    name: "Notes on freelancing as an engineer",
+    mentions: "the rebuild · upcoming",
     review:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Freelance work is its own product. Scoping, pricing, saying no — none of that gets taught in the pipeline you spent a decade learning.",
     imgPath: "/images/client2.png",
   },
   {
-    name: "Marvin McKinney",
-    mentions: "@marvinmckinney",
+    name: "What 'indie data product' even means",
+    mentions: "the rebuild · upcoming",
     review:
-      "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+      "Indie usually means SaaS for developers. I want to see what falls out when you point the same energy at analytics, ETL, and the unglamorous middle of the stack.",
     imgPath: "/images/client5.png",
   },
   {
-    name: "Floyd Miles",
-    mentions: "@floydmiles",
+    name: "Tools I'm actually using",
+    mentions: "the rebuild · upcoming",
     review:
-      "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+      "Python, SQL, dbt, an embarrassing number of LLM tabs open. Less stack-flexing, more honest accounting of what does the work.",
     imgPath: "/images/client4.png",
   },
   {
-    name: "Albert Flores",
-    mentions: "@albertflores",
+    name: "The plan, such as it is",
+    mentions: "the rebuild · upcoming",
     review:
-      "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+      "Ship small things, write about each one, get less wrong over time. That's the entire strategy. Subscribe if that sounds useful.",
     imgPath: "/images/client6.png",
   },
 ];
 
+// TODO: replace icon images with platform-appropriate ones
+// (currently reusing existing template PNGs as placeholders)
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
+    name: "X / Twitter",
     imgPath: "/images/x.png",
+    href: "https://x.com/Destructa_P",
   },
   {
-    name: "linkedin",
+    name: "Substack",
+    imgPath: "/images/fb.png",
+    href: "https://substack.com/@destructaphoenix",
+  },
+  {
+    name: "GitHub",
     imgPath: "/images/linkedin.png",
+    href: "https://github.com/destructaphoenix",
+  },
+  {
+    name: "Email",
+    imgPath: "/images/insta.png",
+    href: "mailto:hello@destructaphoenix.dev",
   },
 ];
 

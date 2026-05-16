@@ -27,7 +27,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shaping
+                Building
                 <span className="slide">
                   <span className="wrapper">
                     {words.map((word, index) => (
@@ -46,17 +46,17 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>into Real Projects</h1>
-              <h1>that Deliver Results</h1>
+              <h1>Engineer by day.</h1>
+              <h1>Builder by intent.</h1>
             </div>
 
             <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I’m Phoenix, a developer based in India with a passion for
-              code.
+              I'm Destructa Phoenix. I build data systems for a living and
+              write about building things on the side.
             </p>
 
             <Button
-              text="See My Work"
+              text="See What I'm Building"
               className="md:w-80 md:h-16 w-60 h-12"
               id="counter"
             />
