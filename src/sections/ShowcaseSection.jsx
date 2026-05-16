@@ -43,22 +43,22 @@ const AppShowcase = () => {
     });
   }, []);
 
+  // TODO: replace with real projects before going live
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/project1.png" alt="Featured project" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                Featured project — coming soon
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                Currently building. I'll write up the what, the why, and the
+                things that broke along the way.
               </p>
             </div>
           </div>
@@ -68,17 +68,17 @@ const AppShowcase = () => {
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
-                  alt="Library Management Platform"
+                  alt="Project in progress"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>Project two — in progress</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
               <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+                <img src="/images/project3.png" alt="Project in progress" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Project three — in progress</h2>
             </div>
           </div>
         </div>
