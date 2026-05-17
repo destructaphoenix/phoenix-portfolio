@@ -236,8 +236,6 @@ const testimonials = [
   },
 ];
 
-// TODO: replace icon images with platform-appropriate ones
-// (currently reusing existing template PNGs as placeholders)
 const socialImgs = [
   {
     name: "X / Twitter",
@@ -246,18 +244,18 @@ const socialImgs = [
   },
   {
     name: "Substack",
-    imgPath: "/images/fb.png",
+    imgPath: "/images/substack.png",
     href: "https://substack.com/@destructaphoenix",
   },
   {
     name: "GitHub",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/images/github.png",
     href: "https://github.com/destructaphoenix",
   },
   {
-    name: "Email",
-    imgPath: "/images/insta.png",
-    href: "mailto:hello@destructaphoenix.dev",
+    name: "LinkedIn",
+    imgPath: "/images/linkedin.png",
+    href: "https://www.linkedin.com/in/saquibahmed02/",
   },
 ];
 
