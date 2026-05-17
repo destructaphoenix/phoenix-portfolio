@@ -57,8 +57,9 @@ const Hero = () => {
 
             <Button
               text="See What I'm Building"
-              className="md:w-80 md:h-16 w-60 h-12"
+              className="md:w-96 md:h-16 w-72 h-12"
               id="counter"
+              targetId="work"
             />
           </div>
         </header>
